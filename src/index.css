@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+*{
+  font-family: 'Rubik', sans-serif;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: green;
+}
+
+
+/* Yukarı ok */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button::before {
+  content: '▲'; /* Yukarı ok için içerik */
+}
+
+/* Aşağı ok */
+input[type="number"]::-webkit-inner-spin-button::after {
+  content: '▼'; /* Aşağı ok için içerik */
+}
+
+
+/* Tüm tarayıcılarda scrollbar'ın arka planını saydam yapma */
+::-webkit-scrollbar {
+  background-color: transparent; /* WebKit tarayıcılar için */
+  width: 6px;
+  margin: 10px;
+}
+
+::-moz-scrollbar {
+  background-color: transparent; /* Firefox için */
+}
+
+::-ms-scrollbar {
+  background-color: transparent; /* Microsoft Edge için */
+}
+
+
+/* İçerik kısmını sağlamak için */
+::-webkit-scrollbar-thumb {
+  background-color: #676D8B; /* Tutma kısmının arka plan rengi */
+  border-radius: 10px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #676D8B; /* Firefox için */
+}
+
+::-ms-scrollbar-thumb {
+  background-color: #676D8B; /* Microsoft Edge için */
+}
